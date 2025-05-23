@@ -81,7 +81,7 @@ TP-02-FINAL-Anya-Dunel-Visoth/
 
 1. **Cloner le repository**
 ```bash
-git clone https://github.com/visothyouksim/TP-02-Anya-Dunel-Visoth-02.git
+git clone https://github.com/visothyouksim/TP-02-FINAL-Anya-Dunel-Visoth.git
 cd TP-02-FINAL-Anya-Dunel-Visoth
 ```
 
