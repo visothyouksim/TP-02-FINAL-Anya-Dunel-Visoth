@@ -24,7 +24,7 @@ Cette application permet la mise en relation entre particuliers pour l'adoption 
 ## 📁 Architecture du projet
 
 ```
-adoptions-animals-mern/
+TP-02-FINAL-Anya-Dunel-Visoth/
 ├── backend/
 │   ├── config/
 │   │   └── database.js
@@ -82,7 +82,7 @@ adoptions-animals-mern/
 1. **Cloner le repository**
 ```bash
 git clone https://github.com/visothyouksim/TP-02-Anya-Dunel-Visoth-02.git
-cd TP-02-Anya-Dunel-Visoth-02.git
+cd TP-02-FINAL-Anya-Dunel-Visoth
 ```
 
 2. **Backend**
