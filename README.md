@@ -82,7 +82,7 @@ adoptions-animals-mern/
 1. **Cloner le repository**
 ```bash
 git clone https://github.com/visothyouksim/TP-02-Anya-Dunel-Visoth-02.git
-cd adoptions-animals-mern
+cd TP-02-Anya-Dunel-Visoth-02.git
 ```
 
 2. **Backend**
@@ -102,7 +102,7 @@ npm install
 Créer `backend/.env` :
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/adoptions_animals
+MONGODB_URI=mongodb://localhost:27017/chatAdopt
 JWT_SECRET=votre_jwt_secret_securise
 ```
 

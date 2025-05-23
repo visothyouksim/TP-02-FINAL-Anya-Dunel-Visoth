@@ -1,0 +1,281 @@
+.animals-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.animals-header h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e67e22, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.filters {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.filters h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.filter-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.filter-group select {
+  padding: 10px 15px;
+  border: 2px solid rgba(189, 195, 199, 0.3);
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.animal-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.animal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, #3498db);
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+.animal-card:hover::before {
+  transform: scaleX(1);
+}
+
+.animal-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(31, 38, 135, 0.5);
+}
+
+.animal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.animal-header h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+
+.animal-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.species-badge {
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.species-badge.chien {
+  background: linear-gradient(135deg, rgba(230, 126, 34, 0.2), rgba(211, 84, 0, 0.2));
+  color: #d35400;
+  border: 1px solid rgba(211, 84, 0, 0.3);
+}
+
+.species-badge.chat {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(41, 128, 185, 0.2));
+  color: #2980b9;
+  border: 1px solid rgba(41, 128, 185, 0.3);
+}
+
+.gender-badge {
+  background: rgba(149, 165, 166, 0.2);
+  color: #7f8c8d;
+  padding: 3px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.animal-info {
+  margin-bottom: 15px;
+}
+
+.animal-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.breed, .age, .color {
+  font-weight: 500;
+}
+
+.description {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.animal-details {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.location, .author {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.health-info {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.health-badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.health-badge.vaccinated {
+  background: linear-gradient(135deg, rgba(39, 174, 96, 0.2), rgba(46, 204, 113, 0.2));
+  color: #27ae60;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+.health-badge.sterilized {
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(142, 68, 173, 0.2));
+  color: #8e44ad;
+  border: 1px solid rgba(142, 68, 173, 0.3);
+}
+
+.animal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.animal-actions .btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.no-animals {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  grid-column: 1 / -1;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+@media (max-width: 768px) {
+  .animals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .animals-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 25px 20px;
+  }
+  
+  .filter-row {
+    gap: 15px;
+  }
+  
+  .filter-group select {
+    min-width: 120px;
+  }
+  
+  .animal-actions {
+    flex-direction: column;
+  }
+}

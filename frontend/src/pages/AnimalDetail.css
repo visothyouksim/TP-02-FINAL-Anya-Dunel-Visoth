@@ -1,0 +1,98 @@
+.animal-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, #3498db);
+}
+
+.detail-header-info {
+  padding: 40px 40px 30px;
+  border-bottom: 2px solid rgba(189, 195, 199, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.detail-header-info h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  flex: 1;
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+.detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.price-section {
+  background: linear-gradient(135deg, rgba(230, 126, 34, 0.1), rgba(52, 152, 219, 0.1));
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid rgba(230, 126, 34, 0.2);
+  text-align: center;
+}
+
+.price-section .price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.price-section small {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.animal-info-section h3,
+.health-section h3,
+.description-section h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info-grid p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 0;
+}
